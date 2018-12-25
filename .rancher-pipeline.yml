@@ -1,17 +1,10 @@
 stages:
-- name: go-build
-  steps:
-  - runScriptConfig:
-      image: golang:latest
-      shellScript: "mkdir -p /go/src/github.com/golang\n\nln -s $(pwd) /go/src/github.com/golang/example
-        \ncd  /go/src/github.com/golang/example/outyet\nGODS=linux GOARCH=amd64 CGO_ENABLED=0
-        go build -o bin/outyet"
 - name: go-test
   steps:
   - runScriptConfig:
       image: golang:latest
       shellScript: "mkdir -p /go/src/github.com/golang\n\nln -s $(pwd) /go/src/github.com/golang/example
-        \ncd  /go/src/github.com/golang/example/outyet\ngo test"
+        \ncd  /go/src/github.com/golang/example\ngo test"
 - name: build-image
   steps:
   - publishImageConfig:
