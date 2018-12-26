@@ -12,5 +12,5 @@ stages:
       buildContext: .
       tag: example/app:v1
       pushRemote: true
-      registry: 127.0.0.1:34593
+      registry: registry.cn-hangzhou.aliyuncs.com/stfa/k8s
 timeout: 60
