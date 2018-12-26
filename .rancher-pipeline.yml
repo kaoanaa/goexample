@@ -10,7 +10,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: kaoanaa/aa:11
+      tag: 127.0.0.1:34286/stfa:v1
       pushRemote: true
-      registry: registry.cn-hangzhou.aliyuncs.com/stfa/k8s
+      registry: 127.0.0.1:34286
 timeout: 60
