@@ -10,7 +10,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: v2
+      tag: k8s:v2
       pushRemote: true
-      registry: registry.cn-hangzhou.aliyuncs.com/stfa/k8s
+      registry: registry.cn-hangzhou.aliyuncs.com/stfa
 timeout: 60
