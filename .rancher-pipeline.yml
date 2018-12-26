@@ -12,5 +12,5 @@ stages:
       buildContext: .
       tag: kaoanaa/aa:11
       pushRemote: true
-      registry: index.docker.io
+      registry: registry.cn-hangzhou.aliyuncs.com/stfa/k8s
 timeout: 60
